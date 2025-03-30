@@ -1,0 +1,10 @@
+
+docker compose build
+
+docker compose up
+
+curl -X POST http://localhost:3002/v0/scrape \
+    -H 'Content-Type: application/json' \
+    -d '{
+          "url": "https://docs.firecrawl.dev"
+        }'q
